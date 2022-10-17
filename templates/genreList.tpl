@@ -4,7 +4,7 @@
     <div class="genreContainer">
         <h2 class="genres h2">Modifique la Lista de Generos</h2>
 
-        <div class="genresTable">
+        <div class="genresTableCont">
             <table>
                 <thead class="genreThead">
                     <tr>

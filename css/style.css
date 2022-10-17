@@ -64,6 +64,54 @@ img{
     padding: 12px;
 }
 
+/* Genres */
+.genres.h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+}
+.genreContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0;
+    gap: 20px;
+}
+.genresTableCont{
+    display: flex;
+    gap: 40px;
+}
+.genresTableCont table td{
+    padding: 15px;
+}
+.genreThead td{
+    background-color: var(--lightBlack);
+    color: var(--lightWhite);
+}
+.genreTbody td{
+    border: 2px solid var(--black);
+    color: var(--lightBlack);
+}
+.genreContainer.unlogged{
+    margin-top: 10%;
+}
+.genreList{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.genreList li{
+    margin: 5px;
+    font-size: 25px;
+}
+.genreList li a{
+    color: var(--black);
+}
+.genreList li:hover{
+    font-size: 27px;
+} 
+
 /* Buttons */
 .btnContainer{
     display: grid;
@@ -120,51 +168,3 @@ img{
     align-items: center;
     gap: 10px;
 }
-
-/* Genres */
-.genres.h2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 35px;
-}
-.genreContainer{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-top: 0;
-    gap: 20px;
-}
-.genresTable{
-    display: flex;
-    gap: 40px;
-}
-.genresTable table td{
-    padding: 15px;
-}
-.genreThead td{
-    background-color: var(--lightBlack);
-    color: var(--lightWhite);
-}
-.genreTbody td{
-    border: 2px solid var(--black);
-    color: var(--lightBlack);
-}
-.genreContainer.unlogged{
-    margin-top: 10%;
-}
-.genreList{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-.genreList li{
-    margin: 5px;
-    font-size: 25px;
-}
-.genreList li a{
-    color: #141414;
-}
-.genreList li:hover{
-    font-size: 27px;
-} 
