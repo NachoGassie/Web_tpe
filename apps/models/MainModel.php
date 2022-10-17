@@ -8,6 +8,6 @@ class MainModel{
     }
     
     protected function conect(){
-        return new PDO('mysql:host=localhost;'.'dbname=db_tpe;charset=utf8', 'root', '');
+        return new PDO('mysql:host=localhost;'.'dbname=db_peliculas;charset=utf8', 'root', '');
     }
 }    
