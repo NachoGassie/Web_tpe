@@ -86,7 +86,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `email`, `password`) VALUES
-(1, 'Nachogassie@gmail.com', '$2a$12$bgQCdNNFBj.XhbPc23zXG.vM5LP4F1PzSpXxUwZXqi4VX2rPLYAdG');
+(1, 'user@user.com', '$2a$12$bgQCdNNFBj.XhbPc23zXG.vM5LP4F1PzSpXxUwZXqi4VX2rPLYAdG');
 
 --
 -- Índices para tablas volcadas
