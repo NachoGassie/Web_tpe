@@ -3,7 +3,7 @@ require_once "./apps/controllers/MovieController.php";
 require_once "./apps/controllers/GenController.php";
 require_once "./apps/controllers/LoginController.php";
 
-$MovieController = new MovieController();
+$movieController = new MovieController();
 $genController = new GenController();
 $loginController = new LoginController();
 
@@ -28,29 +28,29 @@ switch ($params[0]) {
         $loginController->logout();
         break;
     case 'home':
-        $MovieController->showHome();
+        $movieController->showHome();
         break;
     case 'id':
-        $MovieController->showPelibyId($params[1]);
+        $movieController->showPelibyId($params[1]);
         break;
     case 'genero':
-        $MovieController->showMovieByGen($params[1]);
+        $genController->showMovieByGen($params[1]);
         break;
     case 'showForm':
         if (!isset($params[1])) {
-            $MovieController->showForm();
+            $movieController->showForm();
         }else{
-            $MovieController->showFormUpdate($params[1]);
+            $movieController->showFormUpdate($params[1]);
         }
         break;
     case 'createMovie':
-        $MovieController->createMovie();
+        $movieController->createMovie();
         break;
     case 'updateMovie':
-        $MovieController->updateMovie();
+        $movieController->updateMovie();
         break;
     case 'deleteMovie':
-        $MovieController->deleteMovie($params[1]);
+        $movieController->deleteMovie($params[1]);
         break;
     case 'genreList':
         $genController->showGeneros();

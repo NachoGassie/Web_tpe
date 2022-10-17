@@ -13,15 +13,6 @@ class MovieController extends Controller{
         $peli = $this->movieModel->getPeliculaId($id);
         $this->movieView->showMovieId($peli);
     }
-    function showMovieByGen($idGen){
-        $peliculas = $this->movieModel->getPeliculaGen($idGen);
-        if (!empty($peliculas)) {
-            //ACA
-            $this->movieView->showMovieGen($peliculas);
-        }else{
-            $this->mainView->showError("Aún no hay peliculas con ese Genero", "genreList");
-        }
-    }
     function showForm($peli = null){
         if ($this->isLogged()){
             $generos = $this->genModel->getGeneros();

@@ -27,7 +27,15 @@ class GenController extends Controller{
             header("Location: ".BASE_URL); 
         }
     }
-    
+    function showMovieByGen($idGen){
+        $peliculas = $this->movieModel->getPeliculaGen($idGen);
+        if (!empty($peliculas)) {
+            //ACA
+            $this->movieView->showMovieGen($peliculas);
+        }else{
+            $this->mainView->showError("Aún no hay peliculas con ese Genero", "genreList");
+        }
+    }
     //ABM
     function createGenero(){
         if ($this->isLogged()){

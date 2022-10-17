@@ -20,6 +20,11 @@ header{
     margin: auto;
     border-bottom: solid 2px var(--black);
 }
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 30px 0;
+}
 h1{    
     text-align: center;
     color: var(--black);
@@ -30,17 +35,13 @@ p{
 }
 a{
     text-decoration: none;
-    cursor: pointer;
 }
 img{
     max-width: 200px;
     max-height: 200px;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    margin: 50px 0 30px 0;
-}
+
+/* Movies */
 .movieContainer{
     margin: 50px 0 0 100px;
     width: 80%;
@@ -62,6 +63,8 @@ main{
 .data{
     padding: 12px;
 }
+
+/* Buttons */
 .btnContainer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -86,24 +89,8 @@ main{
 .btn.particular{
     grid-column-start: span 2;
 }
-.genListContainer{
-    display: flex;
-    margin: auto;
-    gap: 30px;
-}
-.genreThead tr td{
-    background-color: var(--lightBlack);
-    color: var(--lightWhite);
-    padding: 15px;
-}
-.genreTbody tr td{
-    padding: 15px;
-    border: 2px solid var(--black);
-    color: var(--lightBlack);
-}
-.genreTbody tr td:hover{
-    font-size: 18px;
-}
+
+/* Form */
 .form{
     display: flex;
     justify-content: center;
@@ -133,15 +120,43 @@ main{
     align-items: center;
     gap: 10px;
 }
-.genres.unlogged{
-    margin-top: 25%;
+
+/* Genres */
+.genres.h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 35px;
+}
+.genreContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0;
+    gap: 20px;
+}
+.genresTable{
+    display: flex;
+    gap: 40px;
+}
+.genresTable table td{
+    padding: 15px;
+}
+.genreThead td{
+    background-color: var(--lightBlack);
+    color: var(--lightWhite);
+}
+.genreTbody td{
+    border: 2px solid var(--black);
+    color: var(--lightBlack);
+}
+.genreContainer.unlogged{
+    margin-top: 10%;
 }
 .genreList{
-    list-style: none;
     display: flex;
+    list-style: none;
+    justify-content: center;
 }
 .genreList li{
     margin: 5px;
@@ -153,7 +168,3 @@ main{
 .genreList li:hover{
     font-size: 27px;
 } 
-h6{
-    font-size: 35px;
-    margin-bottom: 20px;
-}
