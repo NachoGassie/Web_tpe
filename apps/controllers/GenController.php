@@ -72,7 +72,7 @@ class GenController extends Controller{
                 header("Location: ".BASE_URL. "genreList");
             } 
         }catch (Exception) {
-            $this->mainView->showError("No puede eliminarse un genero perteneciete a una pelicula", "genreList"); 
+            $this->mainView->showError("No puede eliminarse un genero perteneciente a una pelicula", "genreList"); 
         }
     }
 }

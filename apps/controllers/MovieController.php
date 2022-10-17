@@ -41,7 +41,7 @@ class MovieController extends Controller{
                 $this->movieModel->insertMovie($title, $poster, $sinopsis, $añoEstreno, $genero);
                 header("Location: ".BASE_URL); 
             }else{ 
-                $this->mainView->showError($this->formErrorMsg(), "addMovie"); 
+                $this->mainView->showError($this->formErrorMsg(), "showForm"); 
             }
         }else{ 
             header("Location: ".BASE_URL); 
@@ -58,7 +58,7 @@ class MovieController extends Controller{
                 $this->movieModel->updateMovie($title, $poster, $sinopsis, $añoEstreno, $genero, $id);
                 header("Location: ".BASE_URL); 
             }else{ 
-                $this->mainView->showError($this->formErrorMsg(), "showUpdateMovie/$id"); 
+                $this->mainView->showError($this->formErrorMsg(), "showForm/$id"); 
             }
         }else{ 
             header("Location: ".BASE_URL); 
