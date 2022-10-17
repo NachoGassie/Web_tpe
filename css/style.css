@@ -20,11 +20,14 @@ header{
     margin: auto;
     border-bottom: solid 2px var(--black);
 }
+<<<<<<< HEAD
 main{
     display: flex;
     flex-direction: column;
     margin: 50px 0 30px 0;
 }
+=======
+>>>>>>> 6c5fa87e14fb66405107159a6c98ae8c993e5201
 h1{    
     text-align: center;
     color: var(--black);
@@ -35,13 +38,25 @@ p{
 }
 a{
     text-decoration: none;
+<<<<<<< HEAD
+=======
+    cursor: pointer;
+>>>>>>> 6c5fa87e14fb66405107159a6c98ae8c993e5201
 }
 img{
     max-width: 200px;
     max-height: 200px;
 }
+<<<<<<< HEAD
 
 /* Movies */
+=======
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 30px 0;
+}
+>>>>>>> 6c5fa87e14fb66405107159a6c98ae8c993e5201
 .movieContainer{
     margin: 50px 0 0 100px;
     width: 80%;
@@ -63,6 +78,7 @@ img{
 .data{
     padding: 12px;
 }
+<<<<<<< HEAD
 
 /* Genres */
 .genres.h2{
@@ -113,6 +129,8 @@ img{
 } 
 
 /* Buttons */
+=======
+>>>>>>> 6c5fa87e14fb66405107159a6c98ae8c993e5201
 .btnContainer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -137,8 +155,29 @@ img{
 .btn.particular{
     grid-column-start: span 2;
 }
+<<<<<<< HEAD
 
 /* Form */
+=======
+.genListContainer{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+}
+.genreThead tr td{
+    background-color: var(--lightBlack);
+    color: var(--lightWhite);
+    padding: 15px;
+}
+.genreTbody tr td{
+    padding: 15px;
+    border: 2px solid var(--black);
+    color: var(--lightBlack);
+}
+.genreTbody tr td:hover{
+    font-size: 18px;
+}
+>>>>>>> 6c5fa87e14fb66405107159a6c98ae8c993e5201
 .form{
     display: flex;
     justify-content: center;
@@ -167,4 +206,32 @@ img{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+<<<<<<< HEAD
 }
+=======
+}
+.genres.unlogged{
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.genreList{
+    list-style: none;
+    display: flex;
+}
+.genreList li{
+    margin: 5px;
+    font-size: 25px;
+}
+.genreList li a{
+    color: #141414;
+}
+.genreList li:hover{
+    font-size: 27px;
+} 
+h6{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+>>>>>>> 6c5fa87e14fb66405107159a6c98ae8c993e5201
