@@ -15,12 +15,7 @@
             </div>
         
             <div class="btnContainer">
-<<<<<<< HEAD
                 <button class="btn particular"><a href='id/{$peli->id}'>Ver más</a></button>
-=======
-                <button class="btn"><a href='id/{$peli->id}'>Ver más</a></button>
-                <button class="btn"><a href='genero/{$peli->id_genero}'>Ver por genero</a></button>
->>>>>>> 6c5fa87e14fb66405107159a6c98ae8c993e5201
             {if $isAdmin}
                 <button class="btn"><a href='showForm/{$peli->id}'>Editar</a></button>
                 <button class="btn"><a href='deleteMovie/{$peli->id}'>Eliminar</a></button> 
