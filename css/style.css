@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black:#141414;
+    --lightBlack:#222;
+    --white:#ddd;
+    --lightWhite:#fff;
+}
+body{
+    background-color: var(--white);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    border-bottom: solid 2px var(--black);
+}
+h1{    
+    text-align: center;
+    color: var(--black);
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 30px 0;
+}
+.movieContainer{
+    margin: 50px 0 0 100px;
+    width: 80%;
+}
+.movieData{
+    display: flex;
+    gap: 30px;
+}
+.movieContainer h3{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.movieContainer h4{
+    font-size: 20px;
+}
+.movieContainer h5{
+    font-size: 15px;
+}
+.data{
+    padding: 12px;
+}
+.btnContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 0 10px;
+    gap: 20px;
+    width: 33%;
+}
+.btn{
+    background-color: var(--lightBlack);
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: var(--white);
+}
+.btn:hover{
+    background-color: var(--black);
+    color: var(--lightWhite);
+}
+.btn.particular{
+    grid-column-start: span 2;
+}
+.genListContainer{
+    display: flex;
+    margin: auto;
+    gap: 30px;
+}
+.genreThead tr td{
+    background-color: var(--lightBlack);
+    color: var(--lightWhite);
+    padding: 15px;
+}
+.genreTbody tr td{
+    padding: 15px;
+    border: 2px solid var(--black);
+    color: var(--lightBlack);
+}
+.genreTbody tr td:hover{
+    font-size: 18px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 320px;
+    height: 270px;
+    border: solid 2px #141414;
+}
+.form.small{
+    width: 270px;
+    height: 220px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+.form form label{
+    padding: 2px;
+}
+.form.genre label{
+    text-align: center;
+}
+.errorMsg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.genres.unlogged{
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.genreList{
+    list-style: none;
+    display: flex;
+}
+.genreList li{
+    margin: 5px;
+    font-size: 25px;
+}
+.genreList li a{
+    color: #141414;
+}
+.genreList li:hover{
+    font-size: 27px;
+} 
+h6{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
